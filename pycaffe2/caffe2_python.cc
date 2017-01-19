@@ -642,8 +642,8 @@ static PyMethodDef gPycaffe2Methods[] = {
 
 
 #ifdef PYCAFFE2_CPU_ONLY
-void initlibcaffe2_python_nogpu(void) {
-  (void) Py_InitModule("libcaffe2_python_nogpu", gPycaffe2Methods);
+void initlibcaffe2_python(void) {
+  (void) Py_InitModule("libcaffe2_python", gPycaffe2Methods);
 #else  // !PYCAFFE2_CPU_ONPY
 void initlibcaffe2_python(void) {
   (void) Py_InitModule("libcaffe2_python", gPycaffe2Methods);
